@@ -3082,7 +3082,7 @@
     invoke-virtual {v4, v2, v1}, Lcom/ifengyu/intercom/g/c/a;->a(Ljava/lang/String;Ljava/lang/String;)Lcom/ifengyu/intercom/g/c/a;
 
     .line 31
-    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->J()I
+    invoke-static {}, Lcom/ifengyu/intercom/i/d0;->Ju()I
 
     move-result v1
 

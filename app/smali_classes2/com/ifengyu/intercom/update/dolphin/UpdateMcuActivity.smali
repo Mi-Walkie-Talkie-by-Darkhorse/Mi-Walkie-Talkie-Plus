@@ -1,5 +1,5 @@
 .class public Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
-.super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
+.super Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;
 .source "UpdateMcuActivity.java"
 
 # interfaces
@@ -1268,6 +1268,17 @@
 .method public a(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
+    iget-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->fwf:Ljava/io/File;
+
+    if-eqz v0, :cond_3
+
+    invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :cond_1
+
+    :cond_3
     const v0, 0x7f110368
 
     if-nez p2, :cond_0
@@ -1315,6 +1326,18 @@
     :cond_2
     return-void
 .end method
+
+
+
+
+
+
+
+
+
+
+
+
 
 .method public b(Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;Z)V
     .locals 0
@@ -1530,15 +1553,13 @@
     :goto_0
     return-void
 
-    nop
-
     :sswitch_data_0
     .sparse-switch
+        0x7f0900a6 -> :sswitch_1
         0x7f09034f -> :sswitch_5
         0x7f090419 -> :sswitch_4
         0x7f0904ae -> :sswitch_3
         0x7f0904b3 -> :sswitch_2
-        0x7f0904b4 -> :sswitch_1
         0x7f0904b6 -> :sswitch_0
     .end sparse-switch
 .end method
@@ -1547,12 +1568,14 @@
     .locals 6
 
     .line 1
-    invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c0056
 
     .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
+
+    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->initUI()V
 
     .line 3
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
@@ -1597,7 +1620,7 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;->v:Landroid/view/View;
 
-    const p1, 0x7f0904b4
+    const p1, 0x7f0900a6
 
     .line 8
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
@@ -1779,10 +1802,10 @@
 
     if-lez p1, :cond_1
 
-    const-string v3, "V"
+    const/16 v3, 0x56
 
     .line 27
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     const/high16 v3, 0x1000000
 
@@ -1793,10 +1816,10 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    const-string v3, "."
+    const/16 v3, 0x2e
 
     .line 29
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     const/high16 v4, 0x10000
 
@@ -1808,7 +1831,7 @@
     invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 31
-    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 32
     rem-int/2addr p1, v4
@@ -2071,7 +2094,7 @@
     .locals 2
 
     .line 1
-    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onDestroy()V
+    invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseUpdateActivity;->onDestroy()V
 
     .line 2
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;

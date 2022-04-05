@@ -434,7 +434,7 @@ Please click the \"+\" button in the upper right corner to add"</string>
     <string name="lite_channel_backup">Channel backup</string>
     <string name="lite_channel_list">Channel list</string>
     <string name="lite_channel_name_placeholder">Channel %1$s</string>
-    <string name="lite_clear_channel">Clear channels</string>
+    <string name="lite_clear_channel">Clear channel</string>
     <string name="lite_config_file_backup_btn_text">Back up walkie-talkie channels</string>
     <string name="lite_config_file_backup_dialog_message">Back up the walkie-talkie channel list to the configuration file now?</string>
     <string name="lite_config_file_backup_finish_text">Backed up to configuration file</string>
@@ -999,4 +999,6 @@ Please enable [Location] in [Settings]."</string>
     <string name="zhixiashi_or_hangkang_en">Municipalities or SAR</string>
     <string name="zhixiashi_or_hangkang">@string/zhixiashi_or_hangkang_en</string>
     <string name="frequency_mhz">Frequency value, MHz</string>
+    <string name="hardware_version">"Hardware version\u0020"</string>
+    <string name="flash_file_text">Flash \"%s\"</string>
 </resources>

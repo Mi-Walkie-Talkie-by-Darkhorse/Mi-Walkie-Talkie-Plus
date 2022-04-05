@@ -4470,7 +4470,7 @@
     <public type="id" name="update_icon" id="0x7f0904b1" />
     <public type="id" name="update_progress" id="0x7f0904b2" />
     <public type="id" name="update_restart_click" id="0x7f0904b3" />
-    <public type="id" name="update_start_click" id="0x7f0904b4" />
+    <public type="id" name="zero_corner_chip" id="0x7f0904b4" />
     <public type="id" name="update_state" id="0x7f0904b5" />
     <public type="id" name="update_sure_click" id="0x7f0904b6" />
     <public type="id" name="update_version" id="0x7f0904b7" />
@@ -4515,7 +4515,6 @@
     <public type="id" name="wrapper_reset_rotate" id="0x7f0904de" />
     <public type="id" name="wrapper_rotate_by_angle" id="0x7f0904df" />
     <public type="id" name="wrapper_states" id="0x7f0904e0" />
-    <public type="id" name="zero_corner_chip" id="0x7f0904e1" />
     <public type="integer" name="abc_config_activityDefaultDur" id="0x7f0a0000" />
     <public type="integer" name="abc_config_activityShortDur" id="0x7f0a0001" />
     <public type="integer" name="anim_duration" id="0x7f0a0002" />
@@ -5876,6 +5875,8 @@
     <public type="string" name="zhixiashi_or_hangkang" id="0x7f1103a2" />
     <public type="string" name="zhixiashi_or_hangkang_en" id="0x7f1103a3" />
     <public type="string" name="frequency_mhz" id="0x7f1103a4" />
+    <public type="string" name="hardware_version" id="0x7f1103a5" />
+    <public type="string" name="flash_file_text" id="0x7f1103a6" />
     <public type="style" name="AVLoadingIndicatorView" id="0x7f120000" />
     <public type="style" name="AVLoadingIndicatorView.Large" id="0x7f120001" />
     <public type="style" name="AVLoadingIndicatorView.Small" id="0x7f120002" />

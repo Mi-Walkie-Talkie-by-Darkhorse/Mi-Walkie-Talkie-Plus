@@ -722,7 +722,7 @@
 
 .field public static final wrap_content:I = 0x7f0904dc
 
-.field public static final zero_corner_chip:I = 0x7f0904e1
+.field public static final zero_corner_chip:I = 0x7f0904b4
 
 
 # direct methods
