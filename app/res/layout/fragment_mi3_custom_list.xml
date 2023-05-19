@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:tag="layout/fragment_mi3_custom_list_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/customList" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btnAddChannel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/qmui_round_button_height" android:layout_margin="20.0dip" android:text="@string/add_custom_channel" android:layout_alignParentBottom="true" app:qmui_backgroundColor="@color/switch_color" app:qmui_borderWidth="0.0dip" app:qmui_radius="23.0dip" />
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

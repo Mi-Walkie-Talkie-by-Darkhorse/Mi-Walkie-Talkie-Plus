@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_top_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <TextView android:gravity="center" android:id="@id/look_all_member" android:background="@drawable/bg_material_ripple_white" android:padding="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/see_more_group_member" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_set_group_name" android:layout_marginTop="10.0dip" app:accessory_type="chevron_text" app:titleText="@string/group_name" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_set_group_avatar" app:accessory_type="chevron_text" app:titleText="@string/group_avatar" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_group_id" android:visibility="gone" app:accessory_type="hide_chevron_text" app:titleText="@string/group_id" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_group_qr" app:accessory_type="chevron" app:titleText="@string/group_qr_title" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_set_my_group_name_in" app:accessory_type="chevron_text" app:titleText="@string/group_my_nickname_in" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/item_change_group_owner" app:accessory_type="chevron" app:titleText="@string/group_owner_change" style="@style/LiteItemView" />
+        </LinearLayout>
+    </ScrollView>
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton android:textSize="16.0sp" android:textColor="#ffff5260" android:gravity="center" android:id="@id/btn_exit_group" android:layout_width="fill_parent" android:layout_height="@dimen/qmui_round_button_height" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:text="@string/device_edit_group" android:layout_marginStart="27.0dip" android:layout_marginEnd="27.0dip" app:qmui_backgroundColor="#fff5f5f5" app:qmui_borderWidth="0.0dip" app:qmui_radius="23.0dip" />
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

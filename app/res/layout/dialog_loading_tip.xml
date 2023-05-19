@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/loading_bg" android:padding="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="120.0dip" android:layout_marginStart="50.0dip" android:layout_marginEnd="50.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/loading_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/load_spinner" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    </LinearLayout>
+</FrameLayout>

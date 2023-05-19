@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chContainer" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="72.0dip" android:paddingStart="40.0dip" android:paddingEnd="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_black_333333" android:gravity="center_vertical" android:id="@id/chSeq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/color_black_333333" android:gravity="end" android:id="@id/chFreq" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/rightArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:layout_marginStart="12.0dip" />
+</LinearLayout>

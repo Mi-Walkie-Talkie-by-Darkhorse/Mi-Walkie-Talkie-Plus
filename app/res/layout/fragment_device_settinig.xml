@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_device_info" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="90.0dip" android:paddingStart="@dimen/lite_padding_horizontal" android:paddingEnd="@dimen/lite_padding_horizontal">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <FrameLayout android:layout_width="59.0dip" android:layout_height="51.0dip">
+                <com.qmuiteam.qmui.widget.QMUIRadiusImageView android:id="@id/iv_avatar" android:clickable="false" android:layout_width="51.0dip" android:layout_height="51.0dip" app:qmui_border_width="0.0px" app:qmui_corner_radius="6.0dip" />
+                <ImageView android:layout_gravity="end|bottom|center" android:id="@id/iv_is_device" android:visibility="visible" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/head_icon_device_big" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="12.0dip" android:layout_marginEnd="20.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/gray_1" android:id="@id/tv_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:scaleType="center" />
+    </LinearLayout>
+    <com.ifengyu.library.widget.view.ItemView android:id="@id/deviceColling" android:layout_height="80.0dip" app:accessory_type="chevron" app:icon="@drawable/device_set_icon_call" app:titleText="@string/device_colling_one_key" style="@style/LiteItemView" />
+    <com.ifengyu.library.widget.view.ItemView android:id="@id/deviceAbort" android:layout_height="80.0dip" app:accessory_type="chevron" app:icon="@drawable/device_set_icon_about" app:titleText="@string/device_abort" style="@style/LiteItemView" />
+    <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton android:textSize="16.0sp" android:textColor="#ffff5260" android:gravity="center" android:id="@id/btn_unbind" android:layout_width="fill_parent" android:layout_height="@dimen/qmui_round_button_height" android:layout_marginTop="30.0dip" android:layout_marginBottom="30.0dip" android:text="@string/device_unbind" android:layout_marginStart="27.0dip" android:layout_marginEnd="27.0dip" app:qmui_backgroundColor="#fff5f5f5" app:qmui_borderWidth="0.0dip" app:qmui_radius="23.0dip" />
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

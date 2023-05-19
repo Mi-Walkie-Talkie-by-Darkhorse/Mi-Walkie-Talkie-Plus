@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/bg_material_ripple_white" android:paddingLeft="23.0dip" android:paddingRight="@dimen/lite_padding_horizontal" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="30.0sp" android:textColor="@color/lite_channel_seq_text_color" android:id="@id/tv_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01" android:includeFontPadding="false" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/icon_arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/empty_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_toLeftOf="@id/iv_arrow" android:layout_toRightOf="@id/tv_number" android:layout_centerVertical="true">
+        <TextView android:textSize="15.0sp" android:textColor="@color/black70" android:id="@id/tv_empty_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lite_empty_channel_title" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/black50" android:id="@id/tv_empty_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lite_empty_channel_detail" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/content_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_arrow" android:layout_toRightOf="@id/tv_number" android:layout_centerVertical="true">
+        <Space android:id="@id/space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_toLeftOf="@id/space" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black70" android:id="@id/tv_freq_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="430.1375/830.5Hz" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/black50" android:id="@id/tv_receive" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lite_receive" android:layout_below="@id/tv_freq_receive" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/space" android:layout_centerVertical="true">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black70" android:id="@id/tv_freq_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="430.1375/830.5Hz" />
+            <TextView android:textSize="11.0sp" android:textColor="@color/black50" android:id="@id/tv_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lite_emission" android:layout_below="@id/tv_freq_receive" />
+        </LinearLayout>
+        <View android:background="@color/lite_bg_color" android:layout_width="@dimen/lite_separator_height" android:layout_height="36.0dip" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

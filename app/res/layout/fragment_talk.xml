@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetFrameLayout android:orientation="vertical" android:background="@color/colorDefaultBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?qmui_topbar_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:overScrollMode="never" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="27.0dip">
+                <ImageView android:id="@id/iv_talk_temporary" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/intercom_btn_temporary" android:scaleType="fitCenter" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_hold_on_to_speak" android:background="@drawable/bg_hold_on_to_speak" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="60.0dip" android:layout_weight="1.0" android:layout_marginStart="20.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/intercom_icon_intercom" android:layout_marginEnd="9.0dip" />
+                    <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hold_on_to_speak" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="center|top" android:id="@id/rv_top_online_list" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:paddingStart="9.0dip" android:paddingEnd="9.0dip" />
+    </FrameLayout>
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetFrameLayout>

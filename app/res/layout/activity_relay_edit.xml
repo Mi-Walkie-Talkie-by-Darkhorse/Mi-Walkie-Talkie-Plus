@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/name" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.ifengyu.intercom.ui.widget.view.ClearEditText android:textColor="@color/body_text_1p5" android:textColorHint="@color/textColorHint" android:id="@id/et_relay_edit_name" android:background="@color/white" android:paddingLeft="22.0dip" android:paddingRight="20.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="47.0dip" android:maxLines="1" android:drawableRight="@drawable/common_btn_clear" android:textCursorDrawable="@drawable/color_cursor" app:textSizePx="30" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/channel" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/fl_relay_edit_up_freq" android:background="@drawable/btn_rec_trasparent" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:text="@string/receive_frequency" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black80" android:layout_gravity="center|right" android:id="@id/tv_relay_edit_up_freq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" />
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/icon_more_black" />
+    </FrameLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/fl_relay_edit_down_freq" android:background="@drawable/btn_rec_trasparent" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:text="@string/emission_frequency" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black80" android:layout_gravity="center|right" android:id="@id/tv_relay_edit_down_freq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" />
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/icon_more_black" />
+    </FrameLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/sub_tone" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/fl_relay_edit_up_tone" android:background="@drawable/btn_rec_trasparent" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:text="@string/receive_sub_tone" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black80" android:layout_gravity="center|right" android:id="@id/tv_relay_edit_up_tone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" />
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/icon_more_black" />
+    </FrameLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/fl_relay_edit_down_tone" android:background="@drawable/btn_rec_trasparent" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:text="@string/emissive_sub_tone" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/black80" android:layout_gravity="center|right" android:id="@id/tv_relay_edit_down_tone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" />
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/icon_more_black" />
+    </FrameLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="16.0sp" android:textColor="@color/body_text_1p5" android:gravity="center" android:layout_gravity="bottom" android:id="@id/btn_relay_edit_delete" android:background="@drawable/btn_rec_trasparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="51.0dip" android:text="@string/common_delete" android:textAllCaps="false" />
+    </FrameLayout>
+</LinearLayout>

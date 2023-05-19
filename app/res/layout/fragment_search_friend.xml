@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ifengyu.intercom.ui.widget.view.FixedEditText android:id="@id/et_search" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="40.0dip" android:layout_margin="10.0dip" android:hint="@string/search_friend_id" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionSearch" style="@style/SearchEditView" />
+        <com.qmuiteam.qmui.layout.QMUIButton android:textSize="14.0sp" android:textColor="@color/lite_colorAccent" android:gravity="center" android:id="@id/btn_cancel" android:background="@null" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="wrap_content" android:text="@string/common_cancel" android:layout_marginEnd="10.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="@color/gray_1" android:layout_gravity="center_horizontal" android:id="@id/my_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="7.0dip" />
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

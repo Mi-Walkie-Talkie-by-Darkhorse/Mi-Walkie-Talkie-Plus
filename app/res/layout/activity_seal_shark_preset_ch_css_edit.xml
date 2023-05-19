@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black60" android:id="@id/channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:background="#fff3f3f3" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/black60" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel_not_to_edit" android:layout_marginStart="20.0dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/black60" android:layout_gravity="center|right" android:id="@id/channel_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="20.0dip" />
+    </FrameLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/sub_tone_can_select" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <FrameLayout android:id="@id/fl_rx_tone" android:background="@drawable/btn_rec_trasparent" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/receive_sub_tone" android:layout_marginStart="20.0dip" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:layout_gravity="center|right" android:id="@id/tv_rx_tone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="40.0dip" />
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/icon_more_black" />
+        <View android:layout_gravity="bottom" android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginStart="20.0dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/fl_tx_tone" android:background="@drawable/btn_rec_trasparent" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/emissive_sub_tone" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/black80" android:layout_gravity="center|right" android:id="@id/tv_tx_tone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" />
+        <ImageView android:layout_gravity="center|right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:src="@drawable/icon_more_black" />
+    </FrameLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.ifengyu.intercom.ui.widget.view.TextViewDrawable android:textSize="12.0sp" android:textColor="@color/black60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/edit_css_code_prompt1" android:drawablePadding="8.0dip" android:drawableStart="@drawable/bluetooth_icon_circle" android:layout_marginStart="22.0dip" android:layout_marginEnd="22.0dip" app:isAliganCenter="false" />
+    <com.ifengyu.intercom.ui.widget.view.TextViewDrawable android:textSize="12.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_css_code_prompt2" android:drawablePadding="8.0dip" android:drawableStart="@drawable/bluetooth_icon_circle" android:layout_marginStart="22.0dip" android:layout_marginEnd="22.0dip" app:isAliganCenter="false" />
+</LinearLayout>

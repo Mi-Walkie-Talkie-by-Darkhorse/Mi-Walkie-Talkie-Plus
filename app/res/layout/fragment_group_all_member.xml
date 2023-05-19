@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ifengyu.intercom.ui.widget.view.FixedEditText android:id="@id/et_search" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" style="@style/SearchEditView" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_search_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </FrameLayout>
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

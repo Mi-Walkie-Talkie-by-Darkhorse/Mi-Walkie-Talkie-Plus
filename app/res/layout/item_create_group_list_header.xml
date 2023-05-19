@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_create_group_by_code" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="80.0dip" android:paddingStart="28.0dip" android:paddingEnd="28.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/create_group_by_code" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" />
+    </LinearLayout>
+    <View android:background="@color/lite_color_separator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" android:layout_marginStart="28.0dip" android:layout_marginEnd="28.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_join_group_by_code" android:background="@drawable/bg_material_ripple_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="80.0dip" android:paddingStart="28.0dip" android:paddingEnd="28.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/join_group_by_code" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" />
+    </LinearLayout>
+</LinearLayout>

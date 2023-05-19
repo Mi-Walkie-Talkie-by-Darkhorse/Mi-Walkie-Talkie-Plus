@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?qmui_topbar_height">
+        <LinearLayout android:orientation="vertical" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/lite_section_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Host设置" />
+            <com.google.android.material.textfield.TextInputLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:hint="Http服务：" app:endIconDrawable="@drawable/input_icon_delete" app:endIconMode="clear_text">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="16.0sp" android:textColor="@color/black80" android:textColorHint="@color/edit_text_hint_color" android:gravity="center_vertical" android:id="@id/et_poc_host" android:layout_width="fill_parent" android:layout_height="50.0dip" android:cursorVisible="true" android:inputType="textWebEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:orientation="horizontal" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="语音服务：" app:endIconDrawable="@drawable/input_icon_delete" app:endIconMode="clear_text">
+                <com.google.android.material.textfield.TextInputEditText android:textSize="16.0sp" android:textColor="@color/black80" android:textColorHint="@color/edit_text_hint_color" android:gravity="center_vertical" android:id="@id/et_audio_host" android:layout_width="fill_parent" android:layout_height="50.0dip" android:cursorVisible="true" android:inputType="textWebEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/env_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <RadioButton android:textSize="16.0sp" android:id="@id/radio_prod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="生产环境" />
+                <RadioButton android:textSize="16.0sp" android:id="@id/radio_test" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试环境" android:layout_marginStart="16.0dip" />
+            </RadioGroup>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@color/lite_section_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="选择支持的设备" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <CheckBox android:enabled="false" android:textSize="16.0sp" android:id="@id/cb_mipoc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="小米公网" />
+                <CheckBox android:textSize="16.0sp" android:id="@id/cb_m303" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="M303" />
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatTextView android:textSize="16.0sp" android:textColor="@android:color/holo_red_light" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/host_tips" android:lineSpacingExtra="8.0dip" />
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton android:textSize="14.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_save" android:layout_width="210.0dip" android:layout_height="44.0dip" android:layout_marginTop="48.0dip" android:text="保存" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:qmui_backgroundColor="@color/colorAccent" app:qmui_borderWidth="0.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/top_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:qmui_bottomDividerHeight="0.0dip" />
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

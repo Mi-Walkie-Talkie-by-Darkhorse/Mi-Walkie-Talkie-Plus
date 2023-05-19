@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <size android:height="40.0dip" android:width="40.0dip" />
+            <solid android:color="#ccffffff" />
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="24.0dip" android:width="24.0dip">
+        <bitmap android:src="@drawable/scankit_flashlight_on" />
+    </item>
+</layer-list>

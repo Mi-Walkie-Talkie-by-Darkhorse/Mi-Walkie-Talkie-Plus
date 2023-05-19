@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/top_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:id="@id/web_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/itemUserAgreement" app:accessory_type="chevron" app:titleText="@string/user_protocol" style="@style/LiteItemView" />
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/itemPrivacyPolicy" app:accessory_type="chevron" app:titleText="@string/privacy_agreement" style="@style/LiteItemView" />
+    </LinearLayout>
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton android:textSize="16.0sp" android:textColor="#ffff5260" android:gravity="center" android:id="@id/btn_quit_user_protocol" android:layout_width="fill_parent" android:layout_height="@dimen/qmui_round_button_height" android:layout_margin="27.0dip" android:text="@string/revoke_agree_user_protocol" app:qmui_backgroundColor="#fff5f5f5" app:qmui_borderWidth="0.0dip" app:qmui_radius="23.0dip" />
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

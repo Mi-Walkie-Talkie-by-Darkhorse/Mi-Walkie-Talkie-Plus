@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="78.0dip" android:paddingStart="@dimen/lite_padding_horizontal" android:paddingEnd="@dimen/lite_padding_horizontal">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/notifyLeftLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_permission_notice" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/lite_colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/system_permission_notice_detail" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/notifyRightLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black50" android:id="@id/notifyValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_permission_opened" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:layout_marginStart="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="78.0dip" android:paddingStart="@dimen/lite_padding_horizontal" android:paddingEnd="@dimen/lite_padding_horizontal">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/cameraLeftLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_permission_camera" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/lite_colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/system_permission_camera_detail" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/cameraRightLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black50" android:id="@id/cameraValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_permission_opened" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:layout_marginStart="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="78.0dip" android:paddingStart="@dimen/lite_padding_horizontal" android:paddingEnd="@dimen/lite_padding_horizontal">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/locationLeftLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_permission_location" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/lite_colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/system_permission_location_detail" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/locationRightLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black50" android:id="@id/locationValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_permission_opened" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:layout_marginStart="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="78.0dip" android:paddingStart="@dimen/lite_padding_horizontal" android:paddingEnd="@dimen/lite_padding_horizontal">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/recordLeftLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_permission_record" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/lite_colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/system_permission_record_detail" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/recordRightLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black50" android:id="@id/recordValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_permission_opened" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:layout_marginStart="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="78.0dip" android:paddingStart="@dimen/lite_padding_horizontal" android:paddingEnd="@dimen/lite_padding_horizontal">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/storageLeftLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="3.0">
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_permission_storage" />
+            <TextView android:textSize="13.0sp" android:textColor="@color/lite_colorAccent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/system_permission_storage_detail" />
+        </LinearLayout>
+        <LinearLayout android:gravity="end|center" android:orientation="horizontal" android:id="@id/storageRightLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <TextView android:textSize="14.0sp" android:textColor="@color/black50" android:id="@id/storageValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/system_permission_opened" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:layout_marginStart="15.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

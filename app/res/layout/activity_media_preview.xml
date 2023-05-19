@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zhihu.matisse.internal.ui.widget.PreviewViewPager android:id="@id/pager" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/bottom_toolbar" android:background="@color/preview_bottom_toolbar_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="4.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="?preview.bottomToolbar.back.textColor" android:layout_gravity="start" android:id="@id/button_back" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" android:text="@string/button_back" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/originalLayout" android:padding="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+                <com.zhihu.matisse.internal.ui.widget.CheckRadioView android:layout_gravity="center_vertical" android:id="@id/original" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_preview_radio_off" android:tint="#ffffffff" />
+                <TextView android:enabled="true" android:textSize="14.0sp" android:textColor="?preview.bottomToolbar.back.textColor" android:layout_gravity="center_vertical" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_original" android:paddingStart="4.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="@color/preview_bottom_size" android:layout_gravity="center" android:id="@id/size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="?preview.bottomToolbar.apply.textColor" android:layout_gravity="end" android:id="@id/button_apply" android:padding="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:foreground="?selectableItemBackground" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/top_toolbar" android:fitsSystemWindows="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:layout_alignParentRight="true">
+        <com.zhihu.matisse.internal.ui.widget.CheckView android:id="@id/check_view" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

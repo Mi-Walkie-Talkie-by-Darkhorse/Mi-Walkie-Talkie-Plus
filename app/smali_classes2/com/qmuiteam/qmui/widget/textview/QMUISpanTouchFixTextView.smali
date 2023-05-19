@@ -1,0 +1,728 @@
+.class public Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;
+.super Landroidx/appcompat/widget/AppCompatTextView;
+.source "QMUISpanTouchFixTextView.java"
+
+# interfaces
+.implements Lcom/qmuiteam/qmui/widget/textview/a;
+.implements Lcom/qmuiteam/qmui/layout/IQMUILayout;
+
+
+# instance fields
+.field private a:Z
+
+.field private b:Z
+
+.field private c:Z
+
+.field private d:Lcom/qmuiteam/qmui/layout/a;
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, p1, v0}, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 2
+    invoke-direct {p0, p1, p2, v0}, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 1
+
+    .line 3
+    invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    const/4 v0, 0x0
+
+    .line 4
+    iput-boolean v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->b:Z
+
+    .line 5
+    iput-boolean v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->c:Z
+
+    .line 6
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setHighlightColor(I)V
+
+    .line 7
+    new-instance v0, Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-direct {v0, p1, p2, p3, p0}, Lcom/qmuiteam/qmui/layout/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILandroid/view/View;)V
+
+    iput-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected b(Z)V
+    .locals 0
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/widget/TextView;->setPressed(Z)V
+
+    return-void
+.end method
+
+.method public c(IIII)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/qmuiteam/qmui/layout/a;->E(IIII)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/TextView;->invalidate()V
+
+    return-void
+.end method
+
+.method protected dispatchDraw(Landroid/graphics/Canvas;)V
+    .locals 3
+
+    .line 1
+    invoke-super {p0, p1}, Landroid/widget/TextView;->dispatchDraw(Landroid/graphics/Canvas;)V
+
+    .line 2
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getWidth()I
+
+    move-result v1
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getHeight()I
+
+    move-result v2
+
+    invoke-virtual {v0, p1, v1, v2}, Lcom/qmuiteam/qmui/layout/a;->p(Landroid/graphics/Canvas;II)V
+
+    .line 3
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->o(Landroid/graphics/Canvas;)V
+
+    return-void
+.end method
+
+.method public e(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->e(I)V
+
+    return-void
+.end method
+
+.method public g(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->g(I)V
+
+    return-void
+.end method
+
+.method public getHideRadiusSide()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->r()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getRadius()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->u()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getShadowAlpha()F
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->w()F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getShadowColor()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->x()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getShadowElevation()I
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->y()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public i(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->i(I)V
+
+    return-void
+.end method
+
+.method public j(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->j(I)V
+
+    return-void
+.end method
+
+.method protected onMeasure(II)V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->t(I)I
+
+    move-result p1
+
+    .line 2
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p2}, Lcom/qmuiteam/qmui/layout/a;->s(I)I
+
+    move-result p2
+
+    .line 3
+    invoke-super {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatTextView;->onMeasure(II)V
+
+    .line 4
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getMeasuredWidth()I
+
+    move-result v1
+
+    invoke-virtual {v0, p1, v1}, Lcom/qmuiteam/qmui/layout/a;->A(II)I
+
+    move-result v0
+
+    .line 5
+    iget-object v1, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {p0}, Landroid/widget/TextView;->getMeasuredHeight()I
+
+    move-result v2
+
+    invoke-virtual {v1, p2, v2}, Lcom/qmuiteam/qmui/layout/a;->z(II)I
+
+    move-result v1
+
+    if-ne p1, v0, :cond_0
+
+    if-eq p2, v1, :cond_1
+
+    .line 6
+    :cond_0
+    invoke-super {p0, v0, v1}, Landroidx/appcompat/widget/AppCompatTextView;->onMeasure(II)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public onTouchEvent(Landroid/view/MotionEvent;)Z
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatTextView;->getText()Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    instance-of v0, v0, Landroid/text/Spannable;
+
+    if-nez v0, :cond_0
+
+    .line 2
+    invoke-super {p0, p1}, Landroid/widget/TextView;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_0
+    const/4 v0, 0x1
+
+    .line 3
+    iput-boolean v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->a:Z
+
+    .line 4
+    invoke-super {p0, p1}, Landroid/widget/TextView;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    move-result p1
+
+    .line 5
+    iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->c:Z
+
+    if-eqz v0, :cond_1
+
+    .line 6
+    iget-boolean p1, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->a:Z
+
+    :cond_1
+    return p1
+.end method
+
+.method public performClick()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->a:Z
+
+    if-nez v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->c:Z
+
+    if-nez v0, :cond_0
+
+    .line 2
+    invoke-super {p0}, Landroid/widget/TextView;->performClick()Z
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public performLongClick()Z
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->a:Z
+
+    if-nez v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->c:Z
+
+    if-nez v0, :cond_0
+
+    .line 2
+    invoke-super {p0}, Landroid/widget/TextView;->performLongClick()Z
+
+    move-result v0
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public setBorderColor(I)V
+    .locals 1
+    .param p1    # I
+        .annotation build Landroidx/annotation/ColorInt;
+        .end annotation
+    .end param
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->setBorderColor(I)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/TextView;->invalidate()V
+
+    return-void
+.end method
+
+.method public setBorderWidth(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->H(I)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/TextView;->invalidate()V
+
+    return-void
+.end method
+
+.method public setBottomDividerAlpha(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->I(I)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/TextView;->invalidate()V
+
+    return-void
+.end method
+
+.method public setHideRadiusSide(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->J(I)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/TextView;->invalidate()V
+
+    return-void
+.end method
+
+.method public setLeftDividerAlpha(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->K(I)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/TextView;->invalidate()V
+
+    return-void
+.end method
+
+.method public setMovementMethodCompat(Landroid/text/method/MovementMethod;)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setMovementMethod(Landroid/text/method/MovementMethod;)V
+
+    .line 2
+    iget-boolean p1, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->c:Z
+
+    if-eqz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->setNeedForceEventToParent(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setMovementMethodDefault()V
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/qmuiteam/qmui/link/c;->getInstance()Landroid/text/method/MovementMethod;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->setMovementMethodCompat(Landroid/text/method/MovementMethod;)V
+
+    return-void
+.end method
+
+.method public setNeedForceEventToParent(Z)V
+    .locals 1
+
+    .line 1
+    iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->c:Z
+
+    xor-int/lit8 v0, p1, 0x1
+
+    .line 2
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setFocusable(Z)V
+
+    xor-int/lit8 v0, p1, 0x1
+
+    .line 3
+    invoke-virtual {p0, v0}, Landroid/widget/TextView;->setClickable(Z)V
+
+    xor-int/lit8 p1, p1, 0x1
+
+    .line 4
+    invoke-virtual {p0, p1}, Landroid/widget/TextView;->setLongClickable(Z)V
+
+    return-void
+.end method
+
+.method public setOuterNormalColor(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->L(I)V
+
+    return-void
+.end method
+
+.method public setOutlineExcludePadding(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->M(Z)V
+
+    return-void
+.end method
+
+.method public setOutlineInset(IIII)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/qmuiteam/qmui/layout/a;->N(IIII)V
+
+    return-void
+.end method
+
+.method public final setPressed(Z)V
+    .locals 1
+
+    .line 1
+    iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->b:Z
+
+    .line 2
+    iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->a:Z
+
+    if-nez v0, :cond_0
+
+    .line 3
+    invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->b(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setRadius(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->O(I)V
+
+    return-void
+.end method
+
+.method public setRadius(II)V
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1, p2}, Lcom/qmuiteam/qmui/layout/a;->P(II)V
+
+    return-void
+.end method
+
+.method public setRadiusAndShadow(IIF)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1, p2, p3}, Lcom/qmuiteam/qmui/layout/a;->Q(IIF)V
+
+    return-void
+.end method
+
+.method public setRadiusAndShadow(IIIF)V
+    .locals 1
+
+    .line 2
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1, p2, p3, p4}, Lcom/qmuiteam/qmui/layout/a;->R(IIIF)V
+
+    return-void
+.end method
+
+.method public setRadiusAndShadow(IIIIF)V
+    .locals 6
+
+    .line 3
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    move v1, p1
+
+    move v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    invoke-virtual/range {v0 .. v5}, Lcom/qmuiteam/qmui/layout/a;->S(IIIIF)V
+
+    return-void
+.end method
+
+.method public setRightDividerAlpha(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->T(I)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/TextView;->invalidate()V
+
+    return-void
+.end method
+
+.method public setShadowAlpha(F)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->U(F)V
+
+    return-void
+.end method
+
+.method public setShadowColor(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->V(I)V
+
+    return-void
+.end method
+
+.method public setShadowElevation(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->X(I)V
+
+    return-void
+.end method
+
+.method public setShowBorderOnlyBeforeL(Z)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->Y(Z)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/TextView;->invalidate()V
+
+    return-void
+.end method
+
+.method public setTopDividerAlpha(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->Z(I)V
+
+    .line 2
+    invoke-virtual {p0}, Landroid/widget/TextView;->invalidate()V
+
+    return-void
+.end method
+
+.method public setTouchSpanHit(Z)V
+    .locals 1
+
+    .line 1
+    iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->a:Z
+
+    if-eq v0, p1, :cond_0
+
+    .line 2
+    iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->a:Z
+
+    .line 3
+    iget-boolean p1, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->b:Z
+
+    invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->setPressed(Z)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public setUseThemeGeneralShadowElevation()V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->d:Lcom/qmuiteam/qmui/layout/a;
+
+    invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->a0()V
+
+    return-void
+.end method

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/dialog_bottom_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:autofit="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="13.0sp" android:textColor="@color/black60" android:gravity="center" android:background="@drawable/btn_rec_white_top_corner" android:clickable="false" android:layout_width="fill_parent" android:layout_height="33.0dip" android:text="@string/setting_my_info_sex" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/male_btn" android:background="@drawable/btn_rec_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="47.0dip" android:text="@string/setting_user_info_gender_male" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/female_btn" android:background="@drawable/item_rec_white_bottom_corner" android:clickable="true" android:layout_width="fill_parent" android:layout_height="47.0dip" android:text="@string/setting_user_info_gender_female" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/black60" android:gravity="center" android:id="@id/cancel_btn" android:background="@drawable/all_corner_click_layout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginTop="7.0dip" android:text="@string/common_cancel" />
+</LinearLayout>

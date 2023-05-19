@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_tab_icon" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/tv_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/iv_tab_icon" android:layout_centerHorizontal="true" />
+    <View android:gravity="center" android:background="@drawable/red_point" android:visibility="gone" android:layout_width="8.0dip" android:layout_height="8.0dip" android:layout_alignTop="@id/iv_tab_icon" android:layout_toEndOf="@id/iv_tab_icon" />
+</RelativeLayout>

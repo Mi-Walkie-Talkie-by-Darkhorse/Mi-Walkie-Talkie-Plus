@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_gaode_download" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="80.0dip">
+        <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/map_icon_topographic_map" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="17.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/gaode_standard_map_offline" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black60" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/gaode_offline_map_description" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    </LinearLayout>
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

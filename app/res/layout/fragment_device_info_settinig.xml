@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.qmuiteam.qmui.layout.QMUIConstraintLayout android:id="@id/device_avatar_ll" android:background="@drawable/bg_material_ripple_white" android:paddingLeft="@dimen/lite_padding_horizontal" android:paddingRight="@dimen/lite_padding_horizontal" android:layout_width="fill_parent" android:layout_height="80.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_info_avatar" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+                <com.qmuiteam.qmui.widget.QMUIRadiusImageView android:id="@id/iv_avatar" android:layout_width="42.0dip" android:layout_height="42.0dip" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toLeftOf="@id/iv_arrow" app:layout_constraintTop_toTopOf="parent" app:qmui_border_width="0.0px" app:qmui_corner_radius="6.0dip" />
+                <ImageView android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" />
+            </com.qmuiteam.qmui.layout.QMUIConstraintLayout>
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/deviceNickname" app:accessory_type="chevron_text" app:titleText="@string/device_info_nickname" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/deviceId" app:accessory_type="hide_chevron_text" app:titleText="@string/device_id" style="@style/LiteItemView" />
+        </LinearLayout>
+    </ScrollView>
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

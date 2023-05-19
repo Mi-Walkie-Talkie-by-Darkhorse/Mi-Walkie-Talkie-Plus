@@ -1,0 +1,256 @@
+.class Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;
+.super Lcom/ifengyu/intercom/o/c/b;
+.source "DiscoveryFragment.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->x3()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+
+# direct methods
+.method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-direct {p0}, Lcom/ifengyu/intercom/o/c/b;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public d(Lokhttp3/Call;Ljava/lang/Exception;I)V
+    .locals 0
+
+    const p1, 0x7f1102dd
+
+    .line 1
+    invoke-static {p1}, Lcom/ifengyu/library/utils/s;->y(I)V
+
+    .line 2
+    iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-static {p1}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->k3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Lcom/ifengyu/intercom/ui/b/b;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-static {p2}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->k3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Lcom/ifengyu/intercom/ui/b/b;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/b/b;->getItemCount()I
+
+    move-result p2
+
+    add-int/lit8 p2, p2, -0x1
+
+    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyItemChanged(I)V
+
+    return-void
+.end method
+
+.method public bridge synthetic e(Ljava/lang/Object;I)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lcom/ifengyu/intercom/bean/DiscoverResult;
+
+    invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->i(Lcom/ifengyu/intercom/bean/DiscoverResult;I)V
+
+    return-void
+.end method
+
+.method public i(Lcom/ifengyu/intercom/bean/DiscoverResult;I)V
+    .locals 7
+
+    .line 1
+    iget-object p2, p1, Lcom/ifengyu/intercom/bean/DiscoverResult;->items:Ljava/util/List;
+
+    invoke-interface {p2}, Ljava/util/List;->size()I
+
+    move-result p2
+
+    const/4 v0, 0x0
+
+    if-lez p2, :cond_3
+
+    .line 2
+    iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-static {v1}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->i3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)I
+
+    move-result v2
+
+    add-int/2addr v2, p2
+
+    invoke-static {v1, v2}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->j3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;I)I
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, p2, :cond_4
+
+    .line 3
+    iget-object v2, p1, Lcom/ifengyu/intercom/bean/DiscoverResult;->items:Ljava/util/List;
+
+    invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;
+
+    .line 4
+    invoke-virtual {v2}, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->getExcerpt()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "<p>"
+
+    const-string v5, ""
+
+    invoke-virtual {v3, v4, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "</p>"
+
+    invoke-virtual {v3, v4, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 5
+    invoke-virtual {v2, v3}, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->setExcerpt(Ljava/lang/String;)V
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    .line 6
+    :goto_1
+    iget-object v5, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-static {v5}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->g3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
+
+    move-result v5
+
+    if-ge v3, v5, :cond_1
+
+    .line 7
+    iget-object v5, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-static {v5}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->g3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v5
+
+    check-cast v5, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;
+
+    .line 8
+    invoke-virtual {v5}, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->getId()I
+
+    move-result v5
+
+    invoke-virtual {v2}, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->getId()I
+
+    move-result v6
+
+    if-ne v5, v6, :cond_0
+
+    const/4 v4, 0x1
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    if-nez v4, :cond_2
+
+    .line 9
+    iget-object v3, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-static {v3}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->g3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
+
+    move-result-object v3
+
+    invoke-virtual {v3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 10
+    :cond_2
+    iget-object v2, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-static {v2}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->k3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Lcom/ifengyu/intercom/ui/b/b;
+
+    move-result-object v2
+
+    iget-object v3, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-static {v3}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->g3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lcom/ifengyu/intercom/ui/b/b;->i(Ljava/util/ArrayList;)V
+
+    .line 11
+    iget-object v2, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-static {v2}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->k3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Lcom/ifengyu/intercom/ui/b/b;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 12
+    :cond_3
+    iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getResources()Landroid/content/res/Resources;
+
+    move-result-object p1
+
+    const p2, 0x7f1103d4
+
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1, v0}, Lcom/ifengyu/intercom/p/b0;->H(Ljava/lang/CharSequence;Z)V
+
+    .line 13
+    iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$c;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
+
+    invoke-static {p1}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->k3(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Lcom/ifengyu/intercom/ui/b/b;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$Adapter;->notifyDataSetChanged()V
+
+    :cond_4
+    return-void
+.end method

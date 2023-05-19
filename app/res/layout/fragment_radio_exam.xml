@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_radio_examination" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="80.0dip" android:paddingStart="28.0dip" android:paddingEnd="28.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/radio_examination" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/ll_radio_question_bank" android:background="@drawable/bg_material_ripple_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="80.0dip" android:paddingStart="28.0dip" android:paddingEnd="28.0dip">
+        <TextView android:textSize="17.0sp" android:textColor="@color/black" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/radio_question_bank" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" />
+    </LinearLayout>
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

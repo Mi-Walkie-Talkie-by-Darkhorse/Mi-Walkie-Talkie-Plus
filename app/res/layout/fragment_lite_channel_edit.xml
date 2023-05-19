@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.qmuiteam.qmui.widget.QMUIWindowInsetLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?qmui_topbar_height">
+        <TextView android:textSize="11.0sp" android:textColor="@color/lite_section_text_color" android:background="@color/white" android:paddingLeft="@dimen/lite_padding_horizontal" android:paddingTop="8.0dip" android:paddingRight="@dimen/lite_padding_horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/frequency" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" android:layout_marginLeft="@dimen/lite_padding_horizontal" />
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_receive_freq" app:accessory_type="chevron_text" app:titleText="@string/receive_frequency" style="@style/LiteEditItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" android:layout_marginLeft="@dimen/lite_padding_horizontal" />
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_send_freq" app:accessory_type="chevron_text" app:titleText="@string/emission_frequency" style="@style/LiteEditItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+        <View android:background="@color/lite_bg_section_color" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/lite_section_text_color" android:background="@color/white" android:paddingLeft="@dimen/lite_padding_horizontal" android:paddingTop="8.0dip" android:paddingRight="@dimen/lite_padding_horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/sub_tone" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" android:layout_marginLeft="@dimen/lite_padding_horizontal" />
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_receive_sub_tone" app:accessory_type="chevron_text" app:titleText="@string/receive_sub_tone" style="@style/LiteEditItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" android:layout_marginLeft="@dimen/lite_padding_horizontal" />
+        <com.ifengyu.library.widget.view.ItemView android:id="@id/item_send_sub_tone" app:accessory_type="chevron_text" app:titleText="@string/emissive_sub_tone" style="@style/LiteEditItemView" />
+        <View android:background="@color/lite_color_separator" android:layout_width="fill_parent" android:layout_height="@dimen/lite_separator_height" />
+        <LinearLayout android:orientation="horizontal" android:background="@color/lite_bg_section_color" android:paddingLeft="@dimen/lite_padding_horizontal" android:paddingTop="13.0dip" android:paddingRight="@dimen/lite_padding_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="8.0dip" android:src="@drawable/dot_orange" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lite_sub_tone_description" />
+        </LinearLayout>
+        <FrameLayout android:background="@color/lite_bg_section_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton android:textSize="14.0sp" android:textColor="@color/lite_red_color" android:layout_gravity="bottom" android:id="@id/btn_clear" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginLeft="@dimen/lite_padding_horizontal" android:layout_marginRight="@dimen/lite_padding_horizontal" android:layout_marginBottom="28.0dip" android:text="@string/clear_channel" app:qmui_backgroundColor="@color/white" app:qmui_borderColor="@color/black10" app:qmui_borderWidth="0.5dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/top_bar" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" app:qmui_backgroundColor="@color/white" />
+</com.qmuiteam.qmui.widget.QMUIWindowInsetLayout>

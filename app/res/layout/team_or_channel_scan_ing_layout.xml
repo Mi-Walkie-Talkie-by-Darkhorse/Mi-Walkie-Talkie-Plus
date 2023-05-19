@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/single_channel_item_height">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/the_mode_of_current" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/white" android:id="@id/bottom_text_ing_describe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/the_mode_of_current" android:layout_centerHorizontal="true" />
+        <com.wang.avi.AVLoadingIndicatorView android:visibility="visible" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_above="@id/the_mode_of_current" android:layout_centerHorizontal="true" app:indicatorColor="@color/white" app:indicatorName="BallPulseIndicator" style="@style/AVLoadingIndicatorView" />
+    </RelativeLayout>
+</LinearLayout>

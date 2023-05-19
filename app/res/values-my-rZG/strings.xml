@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scankit_confirm">အိုေက</string>
+    <string name="scankit_light">ေနာက္ထပ္အလင္းရရွိရန္အတြက္ ႏွိပ္ပါ</string>
+    <string name="scankit_light_off">မီးပိတ္ရန္</string>
+    <string name="scankit_no_code_tip">မည္သည့္ ကုဒ္မွ် ရွာမေတြ႕ပါ။</string>
+    <string name="scankit_scan_tip">ကုဒ္ကို ဖရိန္အတြင္း ဝင္ေအာင္ ထားပါ</string>
+    <string name="scankit_talkback_back">Back</string>
+    <string name="scankit_talkback_photo">Gallery</string>
+    <string name="scankit_title">စကန္ဖတ္ပါ</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/channel_settting_custom_option_1" android:gravity="center" android:id="@id/afstv_channel_custom_item_option_dialog_title" android:background="@drawable/dialog_top_message_bg" android:layout_width="fill_parent" android:layout_height="80.0dip" />
+    <View android:background="@color/line_3" android:layout_width="fill_parent" android:layout_height="@dimen/devider_height" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/channel_settting_custom_option_2" android:gravity="center" android:id="@id/afstv_channel_custom_item_option_dialog_delete" android:background="@drawable/channel_custom_item_option_dialog_selector" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="@string/common_delete" />
+    <View android:background="@color/line_3" android:layout_width="fill_parent" android:layout_height="@dimen/devider_height" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/channel_settting_custom_option_2" android:gravity="center" android:id="@id/afstv_channel_custom_item_option_dialog_modify" android:background="@drawable/channel_custom_item_option_dialog_selector" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="@string/edit" />
+    <View android:background="@color/line_3" android:layout_width="fill_parent" android:layout_height="@dimen/devider_height" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/channel_settting_custom_option_2" android:gravity="center" android:id="@id/afstv_channel_custom_item_option_dialog_rename" android:background="@drawable/channel_custom_item_option_dialog_selector" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="@string/rename" />
+    <View android:background="@color/line_3" android:layout_width="fill_parent" android:layout_height="@dimen/devider_height" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/channel_settting_custom_option_2" android:gravity="center" android:id="@id/afstv_channel_custom_item_option_dialog_cancel" android:background="@drawable/dialog_neutral_btn_bg" android:layout_width="fill_parent" android:layout_height="52.0dip" android:text="@string/common_cancel" />
+</LinearLayout>

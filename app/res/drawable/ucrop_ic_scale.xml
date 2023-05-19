@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:tint="@color/ucrop_color_active_controls_color" android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ff000000" android:pathData="M8,8v8h8L16,8L8,8zM6,6h12v12L6,18L6,6zM9,2v2L3,4l1,-1v6L2,9L2,2h7zM2,15h2v6l-1,-1h6v2L2,22v-7zM22,9h-2L20,3l1,1h-6L15,2h7v7zM15,22v-2h6l-1,1v-6h2v7h-7z" android:fillType="nonZero" />
+</vector>

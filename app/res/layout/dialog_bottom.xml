@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dialog_bottom_top_split" android:background="@color/item_stroke" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_split_width" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_height" android:layout_below="@id/dialog_bottom_top_split">
+        <TextView android:id="@id/button_negative" android:background="@drawable/dialog_negative_btn_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_cancel" android:layout_weight="1.0" style="@style/dialogButtonText" />
+        <View android:background="@color/item_stroke" android:layout_width="@dimen/dialog_split_width" android:layout_height="fill_parent" />
+        <TextView android:id="@id/button_positive" android:background="@drawable/dialog_positive_btn_bg" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_select" android:layout_weight="1.0" style="@style/dialogButtonText" />
+    </LinearLayout>
+    <TextView android:id="@id/button_neutral" android:background="@drawable/dialog_neutral_btn_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_button_height" android:text="@string/common_select" android:layout_below="@id/dialog_bottom_top_split" style="@style/dialogButtonText" />
+</RelativeLayout>

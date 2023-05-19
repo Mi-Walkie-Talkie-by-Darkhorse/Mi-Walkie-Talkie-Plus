@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:my_view="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextureView android:id="@id/surfaceView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.huawei.hms.scankit.ViewfinderView android:id="@id/viewfinderView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textAllCaps="false" my_view:scankit_cornerColor="#ffffffff" my_view:scankit_frameColor="#00ffffff" my_view:scankit_labelText="@string/scankit_scan_tip" my_view:scankit_labelTextColor="#ffffffff" my_view:scankit_labelTextSize="12.0sp" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/scan_title" android:layout_width="fill_parent" android:layout_height="56.0dip">
+        <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/title_scan" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0sp" android:text="@string/scankit_title" android:layout_toRightOf="@id/back_img_in" android:contentDescription="@string/scankit_title" android:textAllCaps="false" />
+        <ImageView android:gravity="center" android:id="@id/back_img_in" android:padding="12.0dip" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/scankit_back" android:contentDescription="@string/scankit_talkback_back" android:layout_marginStart="12.0dip" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/flash_light_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="48.0dip" android:layout_marginBottom="48.0dip">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivFlash" android:visibility="visible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/scankit_flash_selected_selector2" android:contentDescription="@string/scankit_light" style="@style/Scankit_OnClick" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/flash_light_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/scankit_light" android:textAllCaps="false" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:layout_gravity="bottom|center" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="104.0dip" android:text="@string/scankit_scan_tip" android:contentDescription="@string/scankit_scan_tip" />
+    <ImageView android:gravity="center" android:layout_gravity="bottom|center|right" android:id="@id/img_btn" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="48.0dip" android:layout_marginBottom="48.0dip" android:src="@drawable/scankit_photo" android:contentDescription="@string/scankit_talkback_photo" />
+</FrameLayout>

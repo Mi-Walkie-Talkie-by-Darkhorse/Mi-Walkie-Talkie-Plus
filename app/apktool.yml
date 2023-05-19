@@ -1,0 +1,33 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: MI-Walkie-Talkie-2.17.21.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- webp
+- wav
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '21'
+  targetSdkVersion: '28'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  androidsupportmultidexversion.txt: '8'
+  miui_push_version: '8'
+  agconnect-core.properties: '8'
+  push_version: '8'
+  okhttp3/internal/publicsuffix/publicsuffixes.gz: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages_de.properties: '8'
+  org/bouncycastle/x509/CertPathReviewerMessages.properties: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.6.0
+versionInfo:
+  versionCode: '301'
+  versionName: 2.17.21

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/action_bar_height">
+        <ImageView android:id="@id/left" android:visibility="gone" android:layout_width="@dimen/title_bar_img_size" android:layout_height="@dimen/title_bar_img_size" android:layout_margin="5.0dip" android:src="@drawable/icon_back" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <TextView android:textSize="18.0sp" android:ellipsize="end" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:includeFontPadding="true" android:layout_centerInParent="true" style="@style/TitleBarTitleStyle" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/right_layout" android:layout_width="wrap_content" android:layout_height="@dimen/action_bar_height" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+            <TextView android:textSize="18.0sp" android:gravity="center" android:id="@id/right_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:lines="1" android:layout_marginEnd="10.0dip" style="@style/TitleBarTitleStyle" />
+            <ImageView android:id="@id/right" android:visibility="gone" android:layout_width="@dimen/title_bar_img_size" android:layout_height="@dimen/title_bar_img_size" android:layout_margin="5.0dip" android:scaleType="centerCrop" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

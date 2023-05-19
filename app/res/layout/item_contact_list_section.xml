@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="34.0dip" android:paddingStart="28.0dip" android:paddingEnd="28.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/tv_section_index" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

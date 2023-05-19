@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/switch_container" android:paddingLeft="15.0dip" android:paddingTop="0.0dip" android:paddingRight="15.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="16.0sp" android:layout_gravity="center|left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collect_diagnosis_log" />
+        <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center|right" android:id="@id/switch_diagnosis" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <Button android:id="@id/upload_diagnosis" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/send_diagnosis_log" android:layout_below="@id/switch_container" />
+    <ScrollView android:id="@id/log_scroller" android:background="#ffeeeeee" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/footer" android:layout_below="@id/upload_diagnosis">
+        <TextView android:textSize="7.0sp" android:id="@id/tv_log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" />
+    </ScrollView>
+    <TextView android:id="@id/footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/for_diagnosis_usage_only" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

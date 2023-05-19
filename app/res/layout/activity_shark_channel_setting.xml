@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/title_bar" android:background="@drawable/channel_img_board" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="start" android:id="@id/title_bar_left" android:layout_width="wrap_content" android:layout_height="@dimen/action_bar_height" android:src="@drawable/icon_back_white" android:scaleType="center" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/channel_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="-----" />
+            <TextView android:textSize="28.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/normal_channel_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-----" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/normal_css_channel_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="end" android:id="@id/normal_rx_css_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <View android:background="@color/white" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/white" android:id="@id/normal_tx_css_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/special_channel_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <TextView android:textSize="28.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/special_rx_channel_number" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="-----" android:layout_weight="1.0" />
+                <View android:background="@color/white" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="28.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/special_tx_channel_number" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="-----" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/special_css_channel_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/special_rx_css_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/special_tx_css_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="13.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/click_to_edit_channel" android:background="@drawable/channel_btn_edit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/click_to_edit_channel" />
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/select_color" />
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <View android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <FrameLayout android:layout_gravity="bottom" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.viewpager.widget.ViewPager android:id="@id/container" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/bottom_transparent_layout" android:background="@drawable/custom_ch_list_bottom_transparent_bg" android:clickable="true" android:layout_width="fill_parent" android:layout_height="80.0dip">
+            <ImageView android:id="@id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/equipment_btn_add" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

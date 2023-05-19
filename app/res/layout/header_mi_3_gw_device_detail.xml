@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/gray_1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="34.0dip" android:text="@string/current_and_listen_group" android:paddingStart="28.0dip" android:paddingEnd="28.0dip" />
+    <com.qmuiteam.qmui.layout.QMUILinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/top_group_info_layout" android:background="@drawable/bg_material_ripple_white" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="23.0dip" android:paddingEnd="23.0dip" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginEnd="10.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/current_group_layout" android:layout_width="fill_parent" android:layout_height="80.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/current_group_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/gray_1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_current_group" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/listen_group_layout" android:layout_width="fill_parent" android:layout_height="80.0dip">
+                <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/listen_group_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginEnd="10.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/gray_1" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/device_listen_group" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:scaleType="fitCenter" />
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/gray_1" android:id="@id/all_group_count" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="28.0dip" android:paddingEnd="28.0dip" />
+        <ImageView android:id="@id/group_manager" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/device_icon_management" android:scaleType="fitCenter" android:paddingStart="28.0dip" android:paddingEnd="28.0dip" />
+    </LinearLayout>
+</LinearLayout>

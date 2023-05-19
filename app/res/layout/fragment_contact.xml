@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ifengyu.intercom.ui.widget.view.FixedEditText android:id="@id/et_search" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="10.0dip" style="@style/SearchEditView" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        <com.ifengyu.intercom.ui.widget.view.QuickIndexBar android:layout_gravity="end" android:id="@id/qib_right_index_bar" android:background="@color/transparent" android:layout_width="25.0dip" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_marginBottom="50.0dip" />
+        <TextView android:textSize="30.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/tv_center_index" android:background="@color/select_color" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_search_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    </FrameLayout>
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

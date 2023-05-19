@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/cur_talk_status" android:background="#ffff8787" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/talk_service_connecting_prompt" android:drawablePadding="10.0dip" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" app:drawableStartCompat="@drawable/common_icon_warning_white" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

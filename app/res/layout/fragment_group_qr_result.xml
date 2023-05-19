@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:background="@color/colorDefaultBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.qmuiteam.qmui.layout.QMUILinearLayout android:orientation="vertical" android:id="@id/rl_bottom_shadow" android:background="@color/white" android:padding="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:qmui_borderColor="@color/qmui_config_color_separator" app:qmui_outerNormalColor="@color/qmui_config_color_background" app:qmui_showBorderOnlyBeforeL="true">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ifengyu.library.widget.groupAdatar.NineGridImageView android:id="@id/ngiv_group_avatar" android:background="@drawable/bg_group_avatar_corner_big" android:layout_width="90.0dip" android:layout_height="90.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center_horizontal" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:maxLines="1" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black60" android:layout_gravity="center_horizontal" android:id="@id/tv_id_or_count" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </com.qmuiteam.qmui.layout.QMUILinearLayout>
+    <View android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_bottom" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/qmui_round_button_height" android:layout_margin="27.0dip" android:text="@string/apply_to_join_group" android:layout_alignParentBottom="true" app:qmui_backgroundColor="@color/switch_color" app:qmui_borderWidth="0.0dip" app:qmui_radius="23.0dip" />
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>

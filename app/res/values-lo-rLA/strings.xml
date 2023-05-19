@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scankit_confirm">ຕົກລົງ</string>
+    <string name="scankit_light">ສຳຜັດ​ສຳລັບ​ແສງ​ເພີ່ມ​ຂຶ້ນ</string>
+    <string name="scankit_light_off">ປິດ​ແສງ</string>
+    <string name="scankit_no_code_tip">ກວດບໍ່​ພົບ​ລະຫັດ​ໃດ.</string>
+    <string name="scankit_scan_tip">ວາງລະ​ຫັດໃສ່​ພາຍ​ໃນ​ຂອບ</string>
+    <string name="scankit_talkback_back">Back</string>
+    <string name="scankit_talkback_photo">Gallery</string>
+    <string name="scankit_title">ສະແກນ</string>
+</resources>

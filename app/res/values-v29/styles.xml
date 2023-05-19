@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppQMUITheme" parent="@style/QMUI.Compat.NoActionBar">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="QMUITopBarStyle">@style/QMUITopBarStyle</item>
+        <item name="qmui_empty_view_btn_height">48.0dip</item>
+        <item name="qmui_empty_view_btn_margin_hor">55.0dip</item>
+        <item name="qmui_empty_view_btn_normal_margin_top">10.0dip</item>
+        <item name="qmui_empty_view_btn_text_size">15.0sp</item>
+        <item name="qmui_empty_view_loading_size">?qmui_loading_size</item>
+        <item name="qmui_empty_view_sub_title_margin_hor">?qmui_content_spacing_horizontal</item>
+        <item name="qmui_empty_view_sub_title_normal_margin_top">3.0dip</item>
+        <item name="qmui_empty_view_sub_title_text_size">13.0sp</item>
+        <item name="qmui_empty_view_title_margin_hor">?qmui_content_spacing_horizontal</item>
+        <item name="qmui_empty_view_title_normal_margin_top">16.0dip</item>
+        <item name="qmui_empty_view_title_text_size">15.0sp</item>
+        <item name="qmui_skin_support_dialog_action_divider_color">@color/lite_dialog_color_action_separator</item>
+        <item name="qmui_skin_support_empty_view_btn_bg_color">?qmui_skin_support_round_btn_bg_color</item>
+        <item name="qmui_skin_support_empty_view_btn_border_color">?qmui_skin_support_round_btn_border_color</item>
+        <item name="qmui_skin_support_empty_view_btn_text_color">?qmui_skin_support_round_btn_text_color</item>
+        <item name="qmui_skin_support_empty_view_loading_color">?qmui_skin_support_loading_color</item>
+        <item name="qmui_skin_support_empty_view_sub_title_color">@color/lite_empty_detail_color</item>
+        <item name="qmui_skin_support_empty_view_title_color">@color/black</item>
+        <item name="qmui_topbar_height">53.0dip</item>
+    </style>
+</resources>

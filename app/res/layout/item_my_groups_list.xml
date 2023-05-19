@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="80.0dip" android:paddingStart="30.0dip" android:paddingEnd="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ifengyu.library.widget.groupAdatar.NineGridImageView android:id="@id/ngiv_group_avatar" android:background="@drawable/bg_group_avatar_corner" android:layout_width="51.0dip" android:layout_height="51.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="20.0dip" android:layout_marginEnd="10.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/gray_1" android:gravity="center_vertical" android:id="@id/tv_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:maxLines="1" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:scaleType="fitCenter" />
+</LinearLayout>

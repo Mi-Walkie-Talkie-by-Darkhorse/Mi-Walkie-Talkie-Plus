@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scankit_confirm">OK</string>
+    <string name="scankit_light">Touch for more light</string>
+    <string name="scankit_light_off">Turn off light</string>
+    <string name="scankit_no_code_tip">No code detected.</string>
+    <string name="scankit_scan_tip">Place the code within the frame</string>
+    <string name="scankit_talkback_back">Back</string>
+    <string name="scankit_talkback_photo">Gallery</string>
+    <string name="scankit_title">Scan</string>
+</resources>

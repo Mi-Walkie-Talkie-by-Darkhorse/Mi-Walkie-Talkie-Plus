@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/space_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/white" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <ImageView android:layout_gravity="center|left" android:id="@id/delete_text_btn" android:paddingRight="22.0dip" android:visibility="invisible" android:layout_width="37.0dip" android:layout_height="fill_parent" android:src="@drawable/common_btn_clear" android:scaleType="fitCenter" android:layout_alignParentRight="true" />
+        <EditText android:textSize="13.0sp" android:textColor="@color/body_text_1p5" android:textColorHint="#55666666" android:gravity="center_vertical" android:id="@id/set_info_et" android:background="@null" android:paddingLeft="22.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/delete_text_btn" />
+        <TextView android:textSize="11.0sp" android:textColor="@color/edit_text_hint_color" android:gravity="center" android:id="@id/activity_set_user_name_length" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

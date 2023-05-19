@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/qmui_group_list_section_header_footer_text_size" android:textColor="?qmui_config_color_gray_3" android:gravity="left" android:id="@id/group_list_section_header_textView" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</merge>

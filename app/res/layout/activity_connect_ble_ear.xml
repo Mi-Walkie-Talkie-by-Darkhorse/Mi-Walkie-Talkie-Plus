@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/title_bar_layout" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/major_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/scan_bt_ear_ing" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    <TextView android:textSize="13.0sp" android:textStyle="normal" android:textColor="@color/black60" android:gravity="center" android:id="@id/minor_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:text="@string/please_sure_enter_conn_bt_ear_mode" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    <com.ifengyu.intercom.ui.widget.view.SquareRelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ifengyu.intercom.ui.widget.view.WaterRippleView android:layout_gravity="center" android:id="@id/water_ripple_view" android:layout_width="fill_parent" android:layout_height="fill_parent" app:rippleAutoRunning="false" app:rippleCenterIcon="@drawable/bluetooth_icon_gif" app:rippleCount="3" />
+    </com.ifengyu.intercom.ui.widget.view.SquareRelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="36.0dip" android:layout_marginEnd="36.0dip">
+        <TextView android:textSize="13.0sp" android:textColor="@color/black60" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/nearby_bt_ear_device" />
+        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/scan_recycler" android:layout_width="fill_parent" android:layout_height="132.0dip" />
+        <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    </LinearLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/select_color" android:id="@id/not_fount_my_want_bt_ear" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/not_fount_my_want_bt_ear" android:drawablePadding="5.0dip" android:drawableEnd="@drawable/bluetooth_icon_more_blue" />
+</LinearLayout>

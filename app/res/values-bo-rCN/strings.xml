@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scankit_confirm">གཏན་འཁེལ།</string>
+    <string name="scankit_light">རྡེབ་ནས་འོད་གསལ།</string>
+    <string name="scankit_light_off">རྡེབ་ནས་ཁ་རྒྱག</string>
+    <string name="scankit_no_code_tip">པར་རིས་ཀྱི་ཁྲོད་ནས་བཤེར་ཨང་མ་རྙེད།</string>
+    <string name="scankit_scan_tip">བཤེར་ཨང་ལྗོངས་ལེན་སྒྲོམ་གྱི་ནང་དུ་བཞག་ཚེ། རང་འགུལ་གྱིས་བཤར་འབེབས་བྱེད།</string>
+    <string name="scankit_talkback_back">Back</string>
+    <string name="scankit_talkback_photo">Gallery</string>
+    <string name="scankit_title">བཤེར་ཨང་བཤེར་བ།</string>
+</resources>

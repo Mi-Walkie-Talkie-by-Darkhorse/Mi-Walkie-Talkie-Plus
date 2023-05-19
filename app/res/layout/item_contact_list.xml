@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_material_ripple_white" android:layout_width="fill_parent" android:layout_height="80.0dip" android:paddingStart="28.0dip" android:paddingEnd="28.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="50.0dip" android:layout_height="42.0dip" android:layout_marginEnd="12.0dip">
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView android:layout_gravity="start" android:id="@id/iv_contact_avatar" android:clickable="false" android:layout_width="42.0dip" android:layout_height="42.0dip" app:qmui_border_width="0.0px" app:qmui_corner_radius="6.0dip" />
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/iv_is_device" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/head_icon_device_big" />
+    </FrameLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/tv_contact_display_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" />
+</LinearLayout>

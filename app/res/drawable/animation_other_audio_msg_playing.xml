@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="50" android:drawable="@drawable/intercom_icon_talking_white_3" />
+    <item android:duration="300" android:drawable="@drawable/intercom_icon_talking_white_1" />
+    <item android:duration="300" android:drawable="@drawable/intercom_icon_talking_white_2" />
+    <item android:duration="300" android:drawable="@drawable/intercom_icon_talking_white_3" />
+</animation-list>

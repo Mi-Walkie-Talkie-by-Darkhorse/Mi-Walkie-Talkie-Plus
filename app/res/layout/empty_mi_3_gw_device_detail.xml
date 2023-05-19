@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginBottom="60.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/empty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:src="@drawable/device_icon_group_none" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/black" android:id="@id/empty_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/device_have_not_join_any_group" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/gray_1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="@string/device_have_not_join_any_group_subtitle" android:layout_marginStart="25.0dip" android:layout_marginEnd="25.0dip" />
+    </LinearLayout>
+    <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/btn_add_new_group" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/qmui_round_button_height" android:layout_margin="27.0dip" android:text="@string/device_add_new_group" app:qmui_backgroundColor="@color/switch_color" app:qmui_borderWidth="0.0dip" app:qmui_radius="23.0dip" />
+</LinearLayout>

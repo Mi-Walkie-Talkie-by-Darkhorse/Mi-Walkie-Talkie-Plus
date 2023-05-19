@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scankit_confirm">OK</string>
+    <string name="scankit_light">Yoritishni kuchaytirish uchun bosing</string>
+    <string name="scankit_light_off">Chiroqni oʻchirish</string>
+    <string name="scankit_no_code_tip">Hech qanday kod aniqlanmadi.</string>
+    <string name="scankit_scan_tip">Kodni hoshiya ichiga joylashtiring</string>
+    <string name="scankit_talkback_back">Back</string>
+    <string name="scankit_talkback_photo">Gallery</string>
+    <string name="scankit_title">Skanerlash</string>
+</resources>

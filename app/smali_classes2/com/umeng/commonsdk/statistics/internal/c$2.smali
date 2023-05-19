@@ -1,0 +1,127 @@
+.class Lcom/umeng/commonsdk/statistics/internal/c$2;
+.super Ljava/lang/Object;
+.source "NetworkHelper.java"
+
+# interfaces
+.implements Lcom/umeng/commonsdk/statistics/internal/UMImprintPreProcessCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/umeng/commonsdk/statistics/internal/c;->d()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/umeng/commonsdk/statistics/internal/c;
+
+
+# direct methods
+.method constructor <init>(Lcom/umeng/commonsdk/statistics/internal/c;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$2;->a:Lcom/umeng/commonsdk/statistics/internal/c;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onPreProcessImprintKey(Ljava/lang/String;Ljava/lang/String;)Z
+    .locals 2
+
+    .line 1
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v1, "--->>> onImprintValueChanged: key="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p1, "; value= "
+
+    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    const-string p2, "MobclickRT"
+
+    invoke-static {p2, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2
+    invoke-static {}, Lcom/umeng/commonsdk/config/FieldManager;->a()Lcom/umeng/commonsdk/config/FieldManager;
+
+    move-result-object p1
+
+    .line 3
+    iget-object p2, p0, Lcom/umeng/commonsdk/statistics/internal/c$2;->a:Lcom/umeng/commonsdk/statistics/internal/c;
+
+    invoke-static {p2}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Lcom/umeng/commonsdk/config/FieldManager;->a(Landroid/content/Context;)V
+
+    .line 4
+    iget-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$2;->a:Lcom/umeng/commonsdk/statistics/internal/c;
+
+    invoke-static {p1}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lcom/umeng/commonsdk/statistics/internal/c$2;->a:Lcom/umeng/commonsdk/statistics/internal/c;
+
+    .line 5
+    invoke-static {p2}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
+
+    move-result-object p2
+
+    invoke-static {p2}, Lcom/umeng/commonsdk/internal/b;->a(Landroid/content/Context;)Lcom/umeng/commonsdk/internal/b;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Lcom/umeng/commonsdk/internal/b;->a()Lcom/umeng/commonsdk/internal/c;
+
+    move-result-object p2
+
+    const v0, 0x8010
+
+    const/4 v1, 0x0
+
+    .line 6
+    invoke-static {p1, v0, p2, v1}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
+
+    .line 7
+    iget-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$2;->a:Lcom/umeng/commonsdk/statistics/internal/c;
+
+    invoke-static {p1}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->getImprintService(Landroid/content/Context;)Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
+
+    move-result-object p1
+
+    const-string p2, "iscfg"
+
+    invoke-virtual {p1, p2}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->a(Ljava/lang/String;)V
+
+    const/4 p1, 0x1
+
+    return p1
+.end method

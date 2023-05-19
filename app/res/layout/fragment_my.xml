@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/title_bar" android:background="@drawable/mine_img_board" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/setting_user_info" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/lite_padding_horizontal" android:layout_marginEnd="@dimen/lite_padding_horizontal">
+            <com.qmuiteam.qmui.widget.QMUIRadiusImageView android:layout_gravity="center_vertical" android:id="@id/setting_user_portrait" android:clickable="false" android:layout_width="52.0dip" android:layout_height="52.0dip" android:src="@drawable/my_head_default" android:scaleType="centerInside" app:qmui_border_width="0.0px" app:qmui_corner_radius="10.0dip" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="20.0dip">
+                <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center_vertical" android:id="@id/setting_user_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" />
+                <TextView android:textSize="12.0sp" android:textColor="@color/white80" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile" />
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="9.0dip" android:src="@drawable/icon_go_white" android:scaleType="fitCenter" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/line_2" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <ScrollView android:background="@color/white" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/discovery_pager" app:accessory_type="chevron" app:icon="@drawable/mine_icon_center" app:titleText="@string/discovery_center" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/radio_exam" app:accessory_type="chevron" app:icon="@drawable/mine_icon_exam" app:titleText="@string/radio_exam" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/setting_map_download" android:visibility="gone" app:accessory_type="chevron" app:icon="@drawable/mine_icon_download" app:titleText="@string/offlinemap_download" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/setting_product_instructions" app:accessory_type="chevron" app:icon="@drawable/mine_icon_product" app:titleText="@string/setting_product_instructions" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/setting_use_help" app:accessory_type="chevron" app:icon="@drawable/mine_icon_key" app:titleText="@string/setting_use_help" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/setting_more_question_feedback" app:accessory_type="chevron" app:icon="@drawable/mine_icon_question" app:titleText="@string/feedback" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/setting_more_about_device" app:accessory_type="chevron" app:icon="@drawable/mine_icon_about" app:titleText="@string/about" style="@style/LiteItemView" />
+            <com.ifengyu.library.widget.view.ItemView android:id="@id/app_setting" app:accessory_type="chevron" app:icon="@drawable/mine_icon_set" app:titleText="@string/setting" style="@style/LiteItemView" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

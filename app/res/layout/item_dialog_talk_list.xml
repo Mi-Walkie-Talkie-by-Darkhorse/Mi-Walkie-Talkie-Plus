@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="18.0dip" android:layout_width="69.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="51.0dip">
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView android:layout_gravity="center" android:id="@id/iv_contact_avatar" android:clickable="false" android:layout_width="51.0dip" android:layout_height="51.0dip" app:qmui_border_width="0.0px" app:qmui_corner_radius="6.0dip" />
+        <FrameLayout android:layout_gravity="center" android:id="@id/bg_not_enter_dialog_group" android:background="@drawable/bg_dialog_talk_loading_item" android:visibility="visible" android:layout_width="51.0dip" android:layout_height="51.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/iv_loading_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/animation_loading_member_enter_temporary" />
+        </FrameLayout>
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/iv_is_device" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/head_icon_device_big" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:textColor="#ff7f7f7f" android:gravity="center" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:maxLines="1" android:singleLine="true" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" />
+</LinearLayout>

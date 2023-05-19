@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.qmuiteam.qmui.widget.QMUITopBarLayout android:id="@id/topbar" android:background="@color/transparent" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:id="@id/about_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/about_icon" />
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/app_name" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/about_app_version" android:id="@id/about_app_versionName" android:padding="@dimen/dp_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_version" />
+    </LinearLayout>
+    <com.ifengyu.library.widget.view.ItemView android:textSize="16.0sp" android:id="@id/check_app_update" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_height="70.0dip" app:accessory_type="chevron" app:titleText="@string/setting_more_apk_check_update" style="@style/LiteItemView" />
+    <RelativeLayout android:id="@id/user_protocol" android:background="@drawable/bg_material_ripple_white" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_protocol_and_privacy_agreement" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/user_improve_plan_layout" android:background="@drawable/bg_material_ripple_white" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_improve_plan" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/user_power_center_layout" android:background="@drawable/bg_material_ripple_white" android:paddingLeft="28.0dip" android:paddingRight="28.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_power_center" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_icon_right_gray" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</com.ifengyu.intercom.ui.widget.view.QMUIWindowInsetLinearLayout>
