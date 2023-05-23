@@ -282,34 +282,22 @@
 .method private r2(Lcom/ifengyu/intercom/device/oldDevice/model/DolphinChannelModel;)V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
-
     check-cast v0, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinCHSettingActivity;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
-    invoke-static {}, Lcom/ifengyu/intercom/p/b0;->c()Z
-
-    move-result v1
-
     const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    if-eqz v1, :cond_2
-
     if-eqz p1, :cond_1
 
-    .line 3
-    new-instance v1, Lcom/ifengyu/intercom/ui/widget/dialog/n;
-
     invoke-virtual {p1}, Lcom/ifengyu/intercom/device/oldDevice/model/DolphinChannelModel;->getFreq()I
 
     move-result v2
@@ -318,65 +306,19 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v0, v2, v3}, Lcom/ifengyu/intercom/ui/widget/dialog/n;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
-
-    goto :goto_0
-
-    .line 4
     :cond_1
-    new-instance v1, Lcom/ifengyu/intercom/ui/widget/dialog/n;
-
-    invoke-direct {v1, v0, v2, v3}, Lcom/ifengyu/intercom/ui/widget/dialog/n;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
-
-    .line 5
-    :goto_0
-    new-instance v0, Lcom/ifengyu/intercom/device/oldDevice/dolphin/fragment/DolphinCustomFragment$b;
-
-    invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/device/oldDevice/dolphin/fragment/DolphinCustomFragment$b;-><init>(Lcom/ifengyu/intercom/device/oldDevice/dolphin/fragment/DolphinCustomFragment;Lcom/ifengyu/intercom/device/oldDevice/model/DolphinChannelModel;)V
-
-    invoke-virtual {v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/n;->v(Lcom/ifengyu/intercom/ui/widget/dialog/n$k;)V
-
-    .line 6
-    invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/widget/dialog/n;->show()V
-
-    goto :goto_2
-
-    :cond_2
-    if-eqz p1, :cond_3
-
-    .line 7
-    new-instance v1, Lcom/ifengyu/intercom/ui/widget/dialog/m;
-
-    invoke-virtual {p1}, Lcom/ifengyu/intercom/device/oldDevice/model/DolphinChannelModel;->getFreq()I
-
-    move-result v2
-
-    invoke-static {v2}, Lcom/ifengyu/intercom/p/b0;->j(I)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v1, v0, v2, v3}, Lcom/ifengyu/intercom/ui/widget/dialog/m;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
-
-    goto :goto_1
-
-    .line 8
-    :cond_3
     new-instance v1, Lcom/ifengyu/intercom/ui/widget/dialog/m;
 
     invoke-direct {v1, v0, v2, v3}, Lcom/ifengyu/intercom/ui/widget/dialog/m;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
 
-    .line 9
-    :goto_1
     new-instance v0, Lcom/ifengyu/intercom/device/oldDevice/dolphin/fragment/DolphinCustomFragment$c;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/device/oldDevice/dolphin/fragment/DolphinCustomFragment$c;-><init>(Lcom/ifengyu/intercom/device/oldDevice/dolphin/fragment/DolphinCustomFragment;Lcom/ifengyu/intercom/device/oldDevice/model/DolphinChannelModel;)V
 
     invoke-virtual {v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->v(Lcom/ifengyu/intercom/ui/widget/dialog/m$k;)V
 
-    .line 10
     invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->show()V
 
-    :goto_2
     return-void
 .end method
 
