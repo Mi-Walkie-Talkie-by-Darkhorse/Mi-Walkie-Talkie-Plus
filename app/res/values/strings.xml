@@ -206,10 +206,10 @@ Please enable read and write mobile phone storage permissions in Settings-Applic
     <string name="channel_name_s_s">%1$s %2$s</string>
     <string name="channel_not_to_edit">Frequency (Not Editable)</string>
     <string name="channel_preset_range">430.000 – 440.000</string>
-    <string name="channel_public">Public Channels</string>
+    <string name="channel_public">China Public Channels</string>
     <string name="channel_public_d">Public channel %1$d</string>
     <string name="channel_public_range">409.7500 – 409.9875</string>
-    <string name="channel_public_seal">Public Channels (L01 - L20)</string>
+    <string name="channel_public_seal">China Public Channels (L01 - L20)</string>
     <string name="channel_receive">Receiving channel</string>
     <string name="channel_remote">Amateur Channels</string>
     <string name="channel_remote_seal">Amateur Channels (H01 - H20)</string>
@@ -520,7 +520,7 @@ Please send this code to the technician."</string>
     <string name="gaode_satellite_map">Satellite AMap</string>
     <string name="gaode_standard_map">Standard AMap</string>
     <string name="gaode_standard_map_download">AMap</string>
-    <string name="gaode_standard_map_offline">AMap</string>
+    <string name="gaode_standard_map_offline">@string/gaode_standard_map_download</string>
     <string name="get_net_device_failed_prompt">"Couldn't get the walkie-talkie list, please check your network connection."</string>
     <string name="go_apply">OK</string>
     <string name="go_to_setting">Grant permission</string>
@@ -679,7 +679,7 @@ Current version is the latest"</string>
     <string name="map_kit_select_next_point">Next measurement point</string>
     <string name="map_kit_select_start_point">Select a starting point</string>
     <string name="map_kit_selected_location_latlong">Coordinate of selected</string>
-    <string name="map_kit_text">Gadgets</string>
+    <string name="map_kit_text">Tools</string>
     <string name="map_size_text">Map size  </string>
     <string name="map_tool_total_distance">Total Distance</string>
     <string name="map_type_text">Maps</string>
@@ -1021,7 +1021,7 @@ After withdrawing consent to the privacy policy, we will stop collecting your pe
     <string name="sure_open_vox_prompt_detail">Using the button-free function in a noisy environment can easily cause false triggering. For better use, please avoid using this function in a noisy environment</string>
     <string name="sure_open_vox_prompt_title">After turning on this function, you can talk to each other without pressing the intercom call button.</string>
     <string name="sure_to_delete_current_feedback">Delete current feedback information?</string>
-    <string name="switch_channel">Switch</string>
+    <string name="switch_channel">Channels</string>
     <string name="system_permission">System permission settings</string>
     <string name="system_permission_camera">Camera</string>
     <string name="system_permission_camera_detail">Photo album permission usage rules</string>
@@ -1105,7 +1105,7 @@ After withdrawing consent to the privacy policy, we will stop collecting your pe
     <string name="update_restart">Update again</string>
     <string name="update_start">Start updating</string>
     <string name="update_success">Successful update</string>
-    <string name="update_to_newest_version">Update to the Latest Version V</string>
+    <string name="update_to_newest_version">Update to the Latest Version\u0020</string>
     <string name="updating_not_close_device">Updating, do not turn off the walkie-talkie…</string>
     <string name="upgrade_immediately">Update</string>
     <string name="upload_local">Upload local data</string>
