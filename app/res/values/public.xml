@@ -4778,7 +4778,6 @@
     <public type="layout" name="dialog_content_frame_list" id="0x7f0c0064" />
     <public type="layout" name="dialog_content_frame_view" id="0x7f0c0065" />
     <public type="layout" name="dialog_custom_channel" id="0x7f0c0066" />
-    <public type="layout" name="dialog_custom_channel_400_470" id="0x7f0c0067" />
     <public type="layout" name="dialog_custom_channel_option" id="0x7f0c0068" />
     <public type="layout" name="dialog_custom_channel_option_rename" id="0x7f0c0069" />
     <public type="layout" name="dialog_device_update_info" id="0x7f0c006a" />
@@ -4792,9 +4791,7 @@
     <public type="layout" name="dialog_pic_selector" id="0x7f0c0072" />
     <public type="layout" name="dialog_product_device_selector" id="0x7f0c0073" />
     <public type="layout" name="dialog_relay_number_picker" id="0x7f0c0074" />
-    <public type="layout" name="dialog_seal_input_custom_channel" id="0x7f0c0075" />
     <public type="layout" name="dialog_session_invite" id="0x7f0c0076" />
-    <public type="layout" name="dialog_shark_input_custom_channel" id="0x7f0c0077" />
     <public type="layout" name="dialog_three_item_select_layout" id="0x7f0c0078" />
     <public type="layout" name="discovery_fragment_info_content_item" id="0x7f0c0079" />
     <public type="layout" name="discovery_fragment_info_query_item" id="0x7f0c007a" />

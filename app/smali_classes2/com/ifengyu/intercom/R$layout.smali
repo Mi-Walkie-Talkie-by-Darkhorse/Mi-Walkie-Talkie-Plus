@@ -209,8 +209,6 @@
 
 .field public static final dialog_custom_channel:I = 0x7f0c0066
 
-.field public static final dialog_custom_channel_400_470:I = 0x7f0c0067
-
 .field public static final dialog_custom_channel_option:I = 0x7f0c0068
 
 .field public static final dialog_custom_channel_option_rename:I = 0x7f0c0069
@@ -237,11 +235,7 @@
 
 .field public static final dialog_relay_number_picker:I = 0x7f0c0074
 
-.field public static final dialog_seal_input_custom_channel:I = 0x7f0c0075
-
 .field public static final dialog_session_invite:I = 0x7f0c0076
-
-.field public static final dialog_shark_input_custom_channel:I = 0x7f0c0077
 
 .field public static final dialog_three_item_select_layout:I = 0x7f0c0078
 
