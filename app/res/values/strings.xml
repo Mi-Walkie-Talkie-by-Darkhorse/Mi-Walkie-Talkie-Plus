@@ -191,7 +191,7 @@ Please enable read and write mobile phone storage permissions in Settings-Applic
     <string name="change_group_owner_fail">"Couldn't transfer ownership"</string>
     <string name="change_group_owner_success">Ownership transferred successfully</string>
     <string name="channel">Channel</string>
-    <string name="channel_custom">Custom channel</string>
+    <string name="channel_custom">Custom channel frequency</string>
     <string name="channel_custom_2s">Custom channel: %1$s/%2$s</string>
     <string name="channel_custom_all_d">Custom channel %1$d</string>
     <string name="channel_custom_d">CH %1$d</string>
@@ -200,7 +200,7 @@ Please enable read and write mobile phone storage permissions in Settings-Applic
     <string name="channel_custom_range_400_470">"Frequency range: 400.000 – 470.000
 144.000 – 148.000 MHz"</string>
     <string name="channel_custom_s">Custom channel: %1$s</string>
-    <string name="channel_launch">Transmitting channel</string>
+    <string name="channel_launch">Transmission channel</string>
     <string name="channel_long_distance_d">Amateur Channel %1$d</string>
     <string name="channel_name">Channel name</string>
     <string name="channel_name_s_s">%1$s %2$s</string>
@@ -472,8 +472,8 @@ Please send this code to the technician."</string>
     <string name="edit_css_code_prompt2">To communicate normally, the other party needs to set the same sub-audible audio tone transmissions after one party sets to receive these tones</string>
     <string name="edit_fail">Edit failed</string>
     <string name="edit_relay">Edit Repeater</string>
-    <string name="emission_frequency">Transmission</string>
-    <string name="emissive_sub_tone">Transmitting sub-code</string>
+    <string name="emission_frequency">Transmission frequency</string>
+    <string name="emissive_sub_tone">Transmission sub-code</string>
     <string name="empty_text">No media yet</string>
     <string name="enter_group">Enter the group</string>
     <string name="error_file_type">Unsupported file type</string>
@@ -870,8 +870,8 @@ Current version is the latest"</string>
     <string name="radio_question_bank">ArExam Bank</string>
     <string name="ranging">Distance</string>
     <string name="receive_css_code_s">RX Sub-code:%1$s</string>
-    <string name="receive_frequency">Receiving</string>
-    <string name="receive_sub_tone">Receive sub-code</string>
+    <string name="receive_frequency">Receiving frequency</string>
+    <string name="receive_sub_tone">Receiving sub-code</string>
     <string name="recent_talk">Recent talk</string>
     <string name="recent_talk_empty">No talking history</string>
     <string name="recent_talk_empty_detail">Please tap + on the top right and select New group talk to start a group talk.</string>
@@ -1159,4 +1159,5 @@ After withdrawing consent to the privacy policy, we will stop collecting your pe
     <string name="yesterday">yesterday</string>
     <string name="zhixiashi_or_hangkang">@string/zhixiashi_or_hangkang_en</string>
     <string name="zhixiashi_or_hangkang_en">Municipalities or SAR</string>
+    <string name="frequency_mhz">Frequency value, MHz</string>
 </resources>

@@ -6203,6 +6203,7 @@
     <public type="string" name="yesterday" id="0x7f11044d" />
     <public type="string" name="zhixiashi_or_hangkang" id="0x7f11044e" />
     <public type="string" name="zhixiashi_or_hangkang_en" id="0x7f11044f" />
+    <public type="string" name="frequency_mhz" id="0x7f110450" />
     <public type="style" name="AVLoadingIndicatorView" id="0x7f120000" />
     <public type="style" name="AVLoadingIndicatorView.Large" id="0x7f120001" />
     <public type="style" name="AVLoadingIndicatorView.Small" id="0x7f120002" />
