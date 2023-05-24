@@ -837,7 +837,6 @@
     <string name="pw_save_mode_had_open">省电模式已开启，通讯距离可能缩短</string>
     <string name="pwd_or_account_error">手机号或密码错误</string>
     <string name="qmui_cancel">取 消</string>
-    <string name="qmui_tool_fixellipsize">​</string>
     <string name="qr_scan_prompt">请将二维码放置在识别框中</string>
     <string name="qr_scan_qr_is_not_match">二维码无法识别</string>
     <string name="qr_this_group_count">（共 %1$d 人）</string>

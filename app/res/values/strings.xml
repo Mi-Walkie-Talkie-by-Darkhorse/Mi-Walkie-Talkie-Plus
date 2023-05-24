@@ -560,6 +560,7 @@ Please send this code to the technician."</string>
     <string name="hide_other_15_channel">Hide additional channels</string>
     <string name="history_feedback">History</string>
     <string name="hold_on_to_speak">Hold to talk</string>
+    <string name="host_tips">Restart application to apply changes</string>
     <string name="hot_infomation">Popular</string>
     <string name="hour_ago">%1$s h ago</string>
     <string name="icon_content_description">Dialog Icon</string>
@@ -858,6 +859,8 @@ Current version is the latest"</string>
     <string name="pw_save_mode_detail">Reduce Power Consumption and Increase Usage Time</string>
     <string name="pw_save_mode_had_open">Enabling Power Saving Mode might reduce the effective communication distance.</string>
     <string name="pwd_or_account_error">Wrong phone number or password.</string>
+    <string name="qmui_cancel">Cancel</string>
+    <string name="qmui_tool_fixellipsize">​</string>
     <string name="qr_scan_prompt">Place the QR code inside the identification frame.</string>
     <string name="qr_scan_qr_is_not_match">Unrecognizable QR code</string>
     <string name="qr_this_group_count">（Members:%1$d）</string>
