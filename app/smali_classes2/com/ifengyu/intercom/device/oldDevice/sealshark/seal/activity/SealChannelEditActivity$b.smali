@@ -3,7 +3,7 @@
 .source "SealChannelEditActivity.java"
 
 # interfaces
-.implements Lcom/ifengyu/intercom/device/oldDevice/sealshark/a/c/a$k;
+.implements Lcom/ifengyu/intercom/ui/widget/dialog/m$k;
 
 
 # annotations
@@ -37,6 +37,8 @@
 # virtual methods
 .method public a(Ljava/lang/String;)V
     .locals 0
+
+    invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/device/oldDevice/sealshark/seal/activity/SealChannelEditActivity$b;->b(Ljava/lang/String;)V
 
     return-void
 .end method
