@@ -194,12 +194,12 @@
 
     if-eqz v2, :cond_1
 
-    invoke-interface {v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/m$k;->a(Ljava/lang/String;)V
+    invoke-interface {v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/m$k;->b(Ljava/lang/String;)V
 
     goto :goto_1
 
     :cond_1
-    invoke-interface {v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/m$k;->b(Ljava/lang/String;)V
+    invoke-interface {v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/m$k;->a(Ljava/lang/String;)V
 
     :cond_2
     :goto_1
@@ -234,7 +234,7 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
 
-    invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/b;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     const v0, 0x7f0c0066
 
@@ -266,7 +266,7 @@
 .method public show()V
     .locals 2
 
-    invoke-super {p0}, Lcom/ifengyu/intercom/ui/widget/dialog/b;->show()V
+    invoke-super {p0}, Landroid/app/Dialog;->show()V
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/m;->n:Ljava/lang/String;
 
