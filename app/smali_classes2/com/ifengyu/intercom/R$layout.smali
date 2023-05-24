@@ -209,6 +209,8 @@
 
 .field public static final dialog_custom_channel:I = 0x7f0c0066
 
+.field public static final utils_toast_view:I = 0x7f0c0067
+
 .field public static final dialog_custom_channel_option:I = 0x7f0c0068
 
 .field public static final dialog_custom_channel_option_rename:I = 0x7f0c0069
@@ -235,7 +237,11 @@
 
 .field public static final dialog_relay_number_picker:I = 0x7f0c0074
 
+.field public static final view_tips_loading:I = 0x7f0c0075
+
 .field public static final dialog_session_invite:I = 0x7f0c0076
+
+.field public static final webview_load_fail:I = 0x7f0c0077
 
 .field public static final dialog_three_item_select_layout:I = 0x7f0c0078
 
@@ -776,12 +782,6 @@
 .field public static final user_guide_muli_device_manager:I = 0x7f0c0184
 
 .field public static final user_guide_share_location:I = 0x7f0c0185
-
-.field public static final utils_toast_view:I = 0x7f0c0186
-
-.field public static final view_tips_loading:I = 0x7f0c0187
-
-.field public static final webview_load_fail:I = 0x7f0c0188
 
 
 # direct methods

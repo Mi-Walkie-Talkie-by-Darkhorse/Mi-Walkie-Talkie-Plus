@@ -5061,9 +5061,9 @@
     <public type="layout" name="user_guide_device_setting" id="0x7f0c0183" />
     <public type="layout" name="user_guide_muli_device_manager" id="0x7f0c0184" />
     <public type="layout" name="user_guide_share_location" id="0x7f0c0185" />
-    <public type="layout" name="utils_toast_view" id="0x7f0c0186" />
-    <public type="layout" name="view_tips_loading" id="0x7f0c0187" />
-    <public type="layout" name="webview_load_fail" id="0x7f0c0188" />
+    <public type="layout" name="utils_toast_view" id="0x7f0c0067" />
+    <public type="layout" name="view_tips_loading" id="0x7f0c0075" />
+    <public type="layout" name="webview_load_fail" id="0x7f0c0077" />
     <public type="layout" name="material_clock_period_toggle_land" id="0x7f0c0115" />
     <public type="menu" name="ucrop_menu_activity" id="0x7f0d0000" />
     <public type="mipmap" name="ic_launcher" id="0x7f0e0006" />

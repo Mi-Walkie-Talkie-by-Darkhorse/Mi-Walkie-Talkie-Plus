@@ -95,6 +95,8 @@
 
 .field public static final dialog_action_layout:I = 0x7f0c005e
 
+.field public static final utils_toast_view:I = 0x7f0c0067
+
 .field public static final dialog_layout:I = 0x7f0c006c
 
 .field public static final item_view_layout:I = 0x7f0c00fd
@@ -276,8 +278,6 @@
 .field public static final text_view_with_theme_line_height:I = 0x7f0c0178
 
 .field public static final text_view_without_line_height:I = 0x7f0c0179
-
-.field public static final utils_toast_view:I = 0x7f0c0186
 
 
 # direct methods
