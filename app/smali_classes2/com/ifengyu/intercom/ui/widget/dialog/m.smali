@@ -242,9 +242,9 @@
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/m;->d:Landroid/app/Activity;
 
-    invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->a(Landroid/app/Activity;)V
+    invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->g(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->a()V
+    invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->u()V
 
     const/4 v0, 0x2
 
@@ -286,12 +286,18 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setSelection(I)V
 
+    invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
+
     :cond_0
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->getWindow()Landroid/view/Window;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
+
+    const v1, 0x20008
+
+    invoke-virtual {v0, v1}, Landroid/view/Window;->clearFlags(I)V
 
     const/4 v1, 0x5
 

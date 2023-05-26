@@ -660,7 +660,7 @@
 
     invoke-direct {v0, p0, v1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/m;-><init>(Landroid/app/Activity;Ljava/lang/String;I)V
 
-    invoke-virtual {v0, p3}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->a(Lcom/ifengyu/intercom/ui/widget/dialog/m$k;)V
+    invoke-virtual {v0, p3}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->v(Lcom/ifengyu/intercom/ui/widget/dialog/m$k;)V
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->show()V
 
@@ -1133,7 +1133,7 @@
     iget v1, p0, Lcom/ifengyu/intercom/device/oldDevice/sealshark/seal/activity/SealChannelEditActivity;->k:I
 
     :goto_5
-    invoke-direct {p0, v4, v5, v4}, Lcom/ifengyu/intercom/device/oldDevice/sealshark/seal/activity/SealChannelEditActivity;->T(IILcom/ifengyu/intercom/ui/widget/dialog/m$k;)V
+    invoke-direct {p0, v1, v5, v4}, Lcom/ifengyu/intercom/device/oldDevice/sealshark/seal/activity/SealChannelEditActivity;->T(IILcom/ifengyu/intercom/ui/widget/dialog/m$k;)V
 
     return-void
 
