@@ -1047,16 +1047,16 @@
 
     invoke-static {p1}, Lcom/ifengyu/intercom/p/b0;->s(Landroid/view/View;)V
 
-    new-instance v4, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity$a;
+    new-instance v2, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity$b;
 
-    invoke-direct {v4, p0}, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity$a;-><init>(Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity;)V
+    invoke-direct {v2, p0}, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity$b;-><init>(Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity;)V
 
     iget v1, p0, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity;->j:I
 
-    const/4 v2, 0x2
+    const/4 v4, 0x2
 
     :cond_9
-    invoke-direct {p0, v1, v2, v4}, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity;->U(IILcom/ifengyu/intercom/ui/widget/dialog/m$k;)V
+    invoke-direct {p0, v1, v4, v2}, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity;->U(IILcom/ifengyu/intercom/ui/widget/dialog/m$k;)V
 
     return-void
 
@@ -1135,9 +1135,9 @@
 
     invoke-static {p1}, Lcom/ifengyu/intercom/p/b0;->s(Landroid/view/View;)V
 
-    new-instance v4, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity$c;
+    new-instance v2, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity$d;
 
-    invoke-direct {v4, p0}, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity$c;-><init>(Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity;)V
+    invoke-direct {v2, p0}, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity$d;-><init>(Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity;)V
 
     iget v1, p0, Lcom/ifengyu/intercom/device/oldDevice/dolphin/activity/DolphinRelayEditActivity;->k:I
 
